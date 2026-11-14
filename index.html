@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes — Privacy Policy</title>
+<style>
+  body{max-width:760px;margin:40px auto;padding:0 20px;font:16px/1.6 -apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1b1b1b}
+  h1{font-size:26px;margin-bottom:4px}
+  h2{font-size:18px;margin-top:28px}
+  .muted{color:#666;font-size:14px}
+  code{background:#f3f3f3;padding:1px 4px;border-radius:3px}
+</style>
+</head>
+<body>
+<h1>Hermes — Privacy Policy</h1>
+<p class="muted">Last updated: 14 November 2026</p>
+
+<p><strong>Hermes</strong> is a personal desktop assistant application used by a single person — its owner — to
+work with their own Google account. It is not a public or commercial service: no accounts are offered to
+third parties and no data of other users is collected.</p>
+
+<h2>1. What the application does</h2>
+<p>Hermes runs locally on the owner's computer. When the owner explicitly asks it to perform a task, it may
+use the Google APIs the owner has authorised to read, search, create or send items in the owner's own
+Google account. Typical tasks: finding an email and its attachments, drafting and sending a message,
+reading or editing a document or spreadsheet, checking a calendar, pulling a file from Google Drive.</p>
+<p>The application acts only on the owner's instruction. It does not run background data collection,
+does not build profiles, and does not monitor the account when not asked to.</p>
+
+<h2>2. Google user data accessed</h2>
+<p>Depending on the task, the application may access:</p>
+<ul>
+  <li><strong>Gmail</strong> — read, compose, send and modify messages and attachments (scopes
+      <code>gmail.readonly</code>, <code>gmail.send</code>, <code>gmail.modify</code>);</li>
+  <li><strong>Google Drive</strong> — list, read, download and upload files (scope <code>drive</code>);</li>
+  <li><strong>Google Docs and Sheets</strong> — read and edit documents and spreadsheets
+      (scopes <code>documents</code>, <code>spreadsheets</code>);</li>
+  <li><strong>Google Calendar</strong> — read and create events (scope <code>calendar</code>);</li>
+  <li><strong>Google Contacts</strong> — read-only address book lookup (scope <code>contacts.readonly</code>).</li>
+</ul>
+<p>Only the data needed for the specific task the owner requested is accessed.</p>
+
+<h2>3. How the data is used and stored</h2>
+<p>Data is used solely to carry out the owner's request on the owner's own machine. Nothing is sent to a
+server operated by the developer of this application — there is no such server.</p>
+<p>OAuth credentials (access and refresh tokens) are stored in a local file on the owner's computer
+(<code>%LOCALAPPDATA%\hermes\google_token.json</code>) protected by the operating system's user account
+permissions. Copies of documents, emails or other content are kept only in local working folders while a
+task is being performed, and are deleted when no longer needed.</p>
+<p>Language-model processing of task text happens through the assistant's configured model provider; only the
+minimum text required for the task is sent, and Google account credentials are never transmitted to it.</p>
+
+<h2>4. Sharing and disclosure</h2>
+<p>The application does not sell, rent, trade or otherwise share Google user data with any third party.
+Data is not used for advertising, profiling, creditworthiness or lending purposes, and is not read by
+humans except where the owner themself reads it.</p>
+
+<h2>5. Limited Use disclosure</h2>
+<p>Hermes' use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+Policy</a>, including its Limited Use requirements.</p>
+
+<h2>6. Retention and deletion</h2>
+<p>Tokens are retained until the owner revokes access or deletes the local file. Access can be revoked at any
+time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; deleting
+<code>google_token.json</code> removes all stored credentials from the computer. Locally saved working copies
+of documents and messages can be deleted by the owner at any time.</p>
+
+<h2>7. Security</h2>
+<p>Access is protected by OAuth 2.0; the application never receives the owner's Google password. Tokens are
+stored locally, never published, and transmitted only over HTTPS to Google's own endpoints.</p>
+
+<h2>8. Children</h2>
+<p>The application is not directed to children and is not offered to anyone other than its owner.</p>
+
+<h2>9. Changes</h2>
+<p>Any change to this policy will be published on this page with a new "last updated" date.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <a href="mailto:niktaranyan@gmail.com">niktaranyan@gmail.com</a></p>
+</body>
+</html>
